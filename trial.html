@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free week</title>
+    <link rel="stylesheet" href="trial.css">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <h1 class="title"><a href="index.html">VormX</a></h1>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+        <nav class="nav-links">
+            <a href="#plans">Membership</a>
+            <a href="#kava">Schedule</a>
+            <a href="trial.html" target="_blank" class="start">Start Free Week</a>
+    </header>
+
+       <form class="ankeet">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="E-mail">
+    <input type="tel" id="tel" placeholder="+372...">
+    <select id="plan">
+        <option value="">Select Package</option>
+        <option value="boxing">Boxing</option>
+        <option value="gym">Gym</option>
+        <option value="fighter">Fighter</option>
+    </select>
+
+    <select id="group">
+        <option value="">Select training group</option>
+        <option value="youth">Junior</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+    </select>
+
+    <button type="submit" class="submit">Send Request</button>
+</form>
+
+<div class="success-message" style="display:none;">
+  Your request has been sent.
+</div>
+
+   <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+
+  burger.addEventListener("click", (e) => {
+    e.stopPropagation();
+    nav.classList.toggle("active");
+  });
+
+  nav.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+
+  document.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      nav.classList.remove("active");
+    }
+  });
+});
+const form = document.querySelector(".ankeet");
+const success = document.querySelector(".success-message");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  success.style.display = "block";
+  form.style.display = "none";
+});
+
+
+</script>
+  </body>
+</html>
