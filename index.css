@@ -83,6 +83,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+.langbtn {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--lime-dark);
+  font-weight: 900;
+  cursor: pointer;
+  margin-left: 25px;
+  margin-right: 25px;
+}
 .start {
   background-color: var(--lime);
   padding: 15px 20px;
@@ -106,8 +117,13 @@ body {
   letter-spacing: -2px;
   margin-bottom: 28px;
 }
-.hero-vasak span {
+.hero-vasak span,
+.cta-txt span {
   color: var(--lime-dark);
+}
+.hero-vasak .none,
+.cta-txt .none {
+  color: var(--white);
 }
 .hero-vasak p {
   font-size: 16px;

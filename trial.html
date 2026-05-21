@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free week</title>
+    <title data-i18n="VormX-request">VormX - Registreerimine</title>
     <link rel="stylesheet" href="trial.css">
   </head>
   <body>
     <header class="navbar">
       <div class="logo">
         <h1 class="title"><a href="index.html">VormX</a></h1>
+        <button class="langbtn" onclick="setLanguage('et')">EST</button>
+<button class="langbtn" onclick="setLanguage('en')">ENG</button></div>
       </div>
       <div class="burger">
         <div class="line"></div>
@@ -17,71 +19,37 @@
         <div class="line"></div>
       </div>
         <nav class="nav-links">
-            <a href="#plans">Membership</a>
-            <a href="#kava">Schedule</a>
-            <a href="trial.html" target="_blank" class="start">Start Free Week</a>
+           <a href="index.html#plans" data-i18n="membership">Liikmelisus</a>
+            <a href="index.html#kava" data-i18n="schedule">Ajakava</a>
+            <a href="trial.html" target="_blank" class="start" data-i18n="free-week">Proovinädal</a>
     </header>
 
        <form class="ankeet">
-    <input type="text" id="name" placeholder="Name">
-    <input type="email" id="email" placeholder="E-mail">
+    <input type="text" id="name" placeholder="Nimi" data-i18n-placeholder="form-name">
+    <input type="email" id="email" placeholder="E-post" data-i18n-placeholder="form-email">
     <input type="tel" id="tel" placeholder="+372...">
     <select id="plan">
-        <option value="">Select Package</option>
-        <option value="boxing">Boxing</option>
-        <option value="gym">Gym</option>
-        <option value="fighter">Fighter</option>
+        <option value="" data-i18n="select-package">Vali pakett</option>
+        <option value="boxing" data-i18n="select-box">Poks</option>
+        <option value="gym" data-i18n="select-gym">Jõusaal</option>
+        <option value="fighter" data-i18n="select-fighter">Võitleja</option>
     </select>
 
     <select id="group">
-        <option value="">Select training group</option>
-        <option value="youth">Junior</option>
-        <option value="men">Men</option>
-        <option value="women">Women</option>
+        <option value="" data-i18n="select-group">Vali treening grupp</option>
+        <option value="youth" data-i18n="box-jun">Noored</option>
+        <option value="men" data-i18n="gym-men">Mehed</option>
+        <option value="women" data-i18n="box-women">Naised</option>
     </select>
 
-    <button type="submit" class="submit">Send Request</button>
+    <button type="submit" class="submit" data-i18n="select-send">Saada avaldus</button>
 </form>
 
-<div class="success-message" style="display:none;">
-  Your request has been sent.
+<div class="success-message" style="display:none;" data-i18n="success-msg">
+  Sinu avaldus on saadetud.
 </div>
 
-   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav-links");
 
-  burger.addEventListener("click", (e) => {
-    e.stopPropagation();
-    nav.classList.toggle("active");
-  });
-
-  nav.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
-
-  document.addEventListener("click", () => {
-    nav.classList.remove("active");
-  });
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 768) {
-      nav.classList.remove("active");
-    }
-  });
-});
-const form = document.querySelector(".ankeet");
-const success = document.querySelector(".success-message");
-
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  success.style.display = "block";
-  form.style.display = "none";
-});
-
-
-</script>
+<script src="index.js"></script>
   </body>
 </html>

@@ -89,6 +89,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+.langbtn {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--lime-dark);
+  font-weight: 900;
+  cursor: pointer;
+  margin-left: 25px;
+  margin-right: 25px;
+}
 .start {
   background-color: var(--lime);
   padding: 15px 20px;

@@ -10,6 +10,8 @@
     <header class="navbar">
       <div class="logo">
         <h1 class="title"><a href="index.html">VormX</a></h1>
+        <button class="langbtn" onclick="setLanguage('et')">EST</button>
+<button class="langbtn" onclick="setLanguage('en')">ENG</button></div>
       </div>
       <div class="burger">
         <div class="line"></div>
@@ -17,18 +19,18 @@
         <div class="line"></div>
       </div>
         <nav class="nav-links">
-            <a href="#plans">Membership</a>
-            <a href="#kava">Schedule</a>
-            <a href="trial.html" target="_blank" class="start">Start Free Week</a>
+            <a href="#plans" data-i18n="membership">Liikmelisus</a>
+            <a href="#kava" data-i18n="schedule">Ajakava</a>
+            <a href="trial.html" target="_blank" class="start" data-i18n="free-week">Proovinädal</a>
     </header>
 
     <section class="hero" id="hero">
         <div class="hero-vasak">
-            <h1>Get <span class="span">Fit</span> -<br> Stay <span class="span">Healthy</span></h1>
-            <p>Join our training community and achieve your goals with us.</p>
+            <h1><span class="none" data-i18n="hero-h1">Tugevam</span> <span class="span" data-i18n="hero-span">sina</span> -<br> <span class="none" data-i18n="hero-start">algab</span> <span class="span" data-i18n="hero-span-two">siit</span></h1>
+            <p data-i18n="hero-p">Liitu meie treeningkogukonnaga ja saavuta oma eesmärgid koos meiega.</p>
             <div class="nupud">
-            <a href="#plans" class="esimenenupp">View plans</a>
-            <a href="trial.html" target="_blank" class="teinenupp">Start Free week</a>
+            <a href="#plans" class="esimenenupp" data-i18n="hero-plans" >Vaata pakette</a>
+            <a href="trial.html" target="_blank" class="teinenupp" data-i18n="free-week">Proovinädal</a>
             </div>
         </div>
         
@@ -41,78 +43,80 @@
         <div class="numberbar">
             <div class="stats">
                 <div class="statnum">500+</div>
-                <div class="statstxt">Active members</div>
+                <div class="statstxt" data-i18n="active">Aktiivset liiget</div>
             </div>
             <div class="stats">
                 <div class="statnum">32</div>
-                <div class="statstxt">Weekly classes</div>
+                <div class="statstxt" data-i18n="classes">Treeningut nädalas</div>
             </div>
             <div class="stats">
                 <div class="statnum">8</div>
-                <div class="statstxt">Expert coaches</div>
+                <div class="statstxt" data-i18n="coaches">Tipptreenerit</div>
             </div>
             <div class="stats">
                 <div class="statnum">24/7</div>
-                <div class="statstxt">Access</div>
+                <div class="statstxt" data-i18n="access">Ligipääs</div>
             </div>
         </div>
     </section>
 
     <section class="plans" id="plans">
         <div class="planscont">
-            <div class="tiitel">training plans</div>
+            <div class="tiitel" data-i18n="plans">Treeningpaketid</div>
             <div class="sectitle">
-                <h2>Choose your plan</h2>
+                <h2 data-i18n="plan-title">Vali endale sobiv pakett</h2>
             </div>
             <div class="plaanid">
                 <div class="plaani-kaart">
-             <div class="nimi">Boxing package</div>
+             <div class="nimi" data-i18n="boxing">Poks</div>
              <div class="hind">
-                <sup>€</sup>50<span class="kuu">/mo</span>
+                <sup>€</sup>50<span class="kuu" data-i18n="mo">/kuu</span>
              </div>
-             <div class="tutvustus">Everything you need to master the art of boxing</div> 
+             <div class="tutvustus" data-i18n="boxing-sub">Tõsine treening neile, kes tahavad päriselt poksis areneda</div> 
 
              <ul class="list">
-                <li>🥊 Professional boxing coaches</li>
-                <li>💪 Full body strength & conditioning</li>
-                <li>⚡ Improve speed, stamina & power</li>
-                <li>🧠 Build confidence and discipline</li>
-                <li>🔥 Intense workouts that push your limits</li>
+                <li data-i18n="list-coach">🥊 Professionaalsed poksitreenerid</li>
+                <li data-i18n="list-body">💪 Jõu- ja vastupidavustreening kogu kehale</li>
+                <li data-i18n="list-speed">⚡ Kiirus, vastupidavus ja löögijõud</li>
+                <li data-i18n="list-smart">🧠 Distsipliin ja enesekindlus</li>
+                <li data-i18n="list-limit">🔥 Intensiivsed treeningud, mis viivad sind järgmisele tasemele</li>
              </ul>
-             <a href="trial.html" target="_blank" class="liitu">Join Boxing</a>
+             <a href="trial.html" target="_blank" class="liitu" data-i18n="list-boxing" >Poksitrenniga liitumine</a>
             </div>
 
              <div class="plaani-kaart">
-             <div class="nimi">Gym package</div>
+             <div class="nimi" data-i18n="gym">Jõusaal</div>
              <div class="hind">
-                <sup>€</sup>45<span class="kuu">/mo</span>
+                <sup>€</sup>45<span class="kuu" data-i18n="mo">/kuu</span>
              </div>
-             <div class="tutvustus">Everything you need to leave excuses behind and start lifting</div> 
+             <div class="tutvustus" data-i18n="gym-sub">Kõik vajalik, et vabandused kõrvale jätta ja päriselt treenima hakata</div> 
 
              <ul class="list">
-                <li>🏋️ Unlimited gym access</li>
-                <li>💪 Premium strength equipment</li>
-                <li>⚡ Functional & cardio training zones</li>
-                <li>🔥 Train on your own schedule</li>
-                <li>🚿 Clean, modern training environment</li>
+                <li data-i18n="gym-access">🏋️ Piiramatu ligipääs jõusaalile</li>
+                <li data-i18n="gym-prem">💪 Tipptasemel jõusaalivarustus</li>
+                <li data-i18n="gym-cardio">⚡ Kardio- ja funktsionaalsed treeningalad</li>
+                <li data-i18n="gym-schedule">🔥 Treeni siis, kui sulle sobib</li>
+                <li data-i18n="gym-env">🚿 Kaasaegne ja puhas treeningkeskkond</li>
              </ul>
-             <a href="trial.html" target="_blank" class="liitu">Join gym</a>
+             <a href="trial.html" target="_blank" class="liitu" data-i18n="gym-join">Jõusaaliga liitumine</a>
             </div>
+
+
              <div class="plaani-kaart">
-             <div class="nimi">Fighter Package</div>
+             <div class="nimi" data-i18n="one" >Võitleja</div>
              <div class="hind">
-                <sup>€</sup>75<span class="kuu">/mo</span>
+                <sup>€</sup>75<span class="kuu" data-i18n="mo">/kuu</span>
              </div>
-             <div class="tutvustus">Everything you need to build strength, skill, and discipline in one place</div> 
+             <div class="tutvustus" data-i18n="one-sub">Täielik pakett neile, kes tahavad nii jõudu kui võitlusoskust</div> 
 
              <ul class="list">
-                <li>🥊 Boxing & gym in one membership</li>
-                <li>💪 Train strength and combat together</li>
-                <li>🏋️ Complete body transformation</li>
-                <li>🧠 Performance-focused training</li>
-                <li>🕒 24/7 gym access</li>
+                <li data-i18n="one-all">🥊 Poks + jõusaal ühes paketis</li>
+                <li data-i18n="one-together">💪 Jõu ja tehnika arendamine koos</li>
+                <li data-i18n="one-body">🏋️ Täielik kehaline transformatsioon</li>
+                <li data-i18n="one-perfo">🧠 Tulemuslik ja eesmärgipõhine treening</li>
+                <li data-i18n="one-access">🕒 24/7 ligipääs</li>
              </ul>
-             <a href="trial.html" target="_blank" class="liitu">Join fighter</a>
+             <a href="trial.html" target="_blank" class="liitu" data-i18n="one-fighter">Võitlejatega liitumine</a>
             </div>
             </div>
         </div>
@@ -121,163 +125,163 @@
 
     <section class="kava" id="kava">
         <div class="cont">
-            <div class="tunniplaan">Weekly Schedule</div>
-            <h2 class="teineh">Boxing schedule</h2>
+            <div class="tunniplaan" data-i18n="weekly-schedule">Nädala treeningkava</div>
+            <h2 class="teineh" data-i18n="box-schedule">Poksi treeningkava</h2>
             <div class="ajakava">
                 <div class="trennikaart">
-                    <div class="päev">Monday</div>
+                    <div class="päev" data-i18n="box-mon">Esmaspäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing / Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 16:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">Junior</div>
-                        <div class="trenn">Boxing</div>
+                         <div class="grupp" data-i18n="box-jun">Noored</div>
+                        <div class="trenn" data-i18n="box-box">Poks</div>
                         <div class="aeg">16:30 - 18:00</div>
                        
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Beginners</div>
-                        <div class="trenn">Boxing Fundamentals</div>
+                        <div class="grupp" data-i18n="box-beginner">Algajad (mehed)</div>
+                        <div class="trenn" data-i18n="box-fund">Algkursus</div>
                         <div class="aeg">18:00 - 19:30</div>
                         
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Advanced</div>
-                        <div class="trenn">Boxing</div>
+                        <div class="grupp" data-i18n="box-adv">Harrastajad</div>
+                        <div class="trenn" data-i18n="box-box">Poks</div>
                         <div class="aeg">19:30 - 20.30</div>
                         
                     </div>
                 </div>
 
                 <div class="trennikaart">
-                    <div class="päev">Tuesday</div>
+                    <div class="päev" data-i18n="box-tue" >Teisipäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 16:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">Junior</div>
-                        <div class="trenn">Boxing Fundamentals</div>
+                         <div class="grupp" data-i18n="box-jun">Noored</div>
+                        <div class="trenn" data-i18n="box-fund">Algkursus</div>
                         <div class="aeg">16:30 - 18:00</div>
                        
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Intermediate</div>
-                        <div class="trenn">Boxing</div>
+                        <div class="grupp" data-i18n="box-int">Edasijõudnud</div>
+                        <div class="trenn" data-i18n="box-box">Poks</div>
                         <div class="aeg">18:00 - 19:30</div>
                         
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Women</div>
-                        <div class="trenn">Fitness boxing</div>
+                        <div class="grupp" data-i18n="box-women">Naised</div>
+                        <div class="trenn" data-i18n="box-fitness">Fitness poks</div>
                         <div class="aeg">19:30 - 20.30</div>
                         
                     </div>
                 </div>
 
                  <div class="trennikaart">
-                    <div class="päev">Wednesday</div>
+                    <div class="päev" data-i18n="box-wed" >Kolmapäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing / Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 16:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">Junior</div>
-                        <div class="trenn">Boxing</div>
+                         <div class="grupp" data-i18n="box-jun">Noored</div>
+                        <div class="trenn" data-i18n="box-box">Poks</div>
                         <div class="aeg">16:30 - 18:00</div>
                        
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Beginners</div>
-                        <div class="trenn">Boxing Fundamentals</div>
+                        <div class="grupp" data-i18n="box-beginner">Algajad</div>
+                        <div class="trenn" data-i18n="box-fund">Algkursus</div>
                         <div class="aeg">18:00 - 19:30</div>
                         
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Advanced</div>
-                        <div class="trenn">Boxing</div>
+                        <div class="grupp" data-i18n="box-adv">Harrastajad</div>
+                        <div class="trenn" data-i18n="box-box">Poks</div>
                         <div class="aeg">19:30 - 20.30</div>
                         
                     </div>
                 </div>
                  <div class="trennikaart">
-                    <div class="päev">Thursday</div>
+                    <div class="päev" data-i18n="box-thur" >Neljapäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 16:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">Junior</div>
-                        <div class="trenn">Boxing Fundamentals</div>
+                         <div class="grupp" data-i18n="box-jun">Noored</div>
+                        <div class="trenn" data-i18n="box-fund">Algkursus</div>
                         <div class="aeg">16:30 - 18:00</div>
                        
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Intermediate</div>
-                        <div class="trenn">Boxing</div>
+                        <div class="grupp" data-i18n="box-int">Edasijõudnud</div>
+                        <div class="trenn" data-i18n="box-box">Poks</div>
                         <div class="aeg">18:00 - 19:30</div>
                         
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Women</div>
-                        <div class="trenn">Fitness boxing</div>
+                        <div class="grupp" data-i18n="box-women">Naised</div>
+                        <div class="trenn" data-i18n="box-fitness">Fitness poks</div>
                         <div class="aeg">19:30 - 20.30</div>
                         
                     </div>
                 </div>
 
                 <div class="trennikaart">
-                    <div class="päev">Friday</div>
+                    <div class="päev" data-i18n="box-fri">Reede</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 16:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">Junior</div>
-                        <div class="trenn">Technical sparring</div>
+                         <div class="grupp" data-i18n="box-jun">Noored</div>
+                        <div class="trenn" data-i18n="box-tech">Tehniline sparring</div>
                         <div class="aeg">16:30 - 18:00</div>
                        
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">All levels</div>
-                        <div class="trenn">Circuit training (boxing)</div>
+                        <div class="grupp" data-i18n="box-all">Kõik grupid</div>
+                        <div class="trenn" data-i18n="box-circ">Ringtreening (poks)</div>
                         <div class="aeg">18:00 - 19:30</div>
                         
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Advanced</div>
-                        <div class="trenn">Light sparring</div>
+                        <div class="grupp" data-i18n="box-adv">Harrastajad</div>
+                        <div class="trenn" data-i18n="box-light">Kerge kontakt</div>
                         <div class="aeg">19:30 - 20.30</div>
                         
                     </div>
                 </div>
 
                 <div class="trennikaart">
-                    <div class="päev">Saturday</div>
+                    <div class="päev" data-i18n="box-sat">Laupäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 22:00</div>
                     </div>
                 </div>
 
 
                 <div class="trennikaart">
-                    <div class="päev">Sunday</div>
+                    <div class="päev" data-i18n="box-sun">Pühapäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 17:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">All levels</div>
-                        <div class="trenn">Circuit training (boxing)</div>
+                         <div class="grupp" data-i18n="box-all">Kõik grupid</div>
+                        <div class="trenn" data-i18n="box-circ">Ringtreening (poks)</div>
                         <div class="aeg">18:30 - 20:00</div>
                        
                     </div>
@@ -289,85 +293,85 @@
 
 
         <div class="cont">
-            <div class="tunniplaan2">Weekly Schedule</div>
-            <h2 class="teineh">Lifting schedule</h2>
+            <div class="tunniplaan2" data-i18n="weekly-schedule">Nädala treeningkava</div>
+            <h2 class="teineh" data-i18n="gym-schedule-time">Jõusaali treeningkava</h2>
             <div class="ajakava">
                 <div class="trennikaart">
-                    <div class="päev">Monday</div>
+                    <div class="päev" data-i18n="box-mon" >Esmaspäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 16:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">Junior</div>
-                        <div class="trenn">Combat Conditioning</div>
+                         <div class="grupp" data-i18n="box-jun">Noored</div>
+                        <div class="trenn" data-i18n="gym-cont">Võitlusspordi üldfüüsis</div>
                         <div class="aeg">16:30 - 18:00</div>
                        
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">all levels</div>
-                        <div class="trenn">Open Lifting</div>
+                        <div class="grupp" data-i18n="box-all">Kõik grupid</div>
+                        <div class="trenn" data-i18n="gym-lift">Vaba jõutreening</div>
                         <div class="aeg">18:00 - 19:30</div>
                         
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Men</div>
-                        <div class="trenn">Barbell Strength</div>
+                        <div class="grupp" data-i18n="gym-men" >Mehed</div>
+                        <div class="trenn" data-i18n="gym-barb">Kangitrenn</div>
                         <div class="aeg">19:30 - 20.30</div>
                         
                     </div>
                 </div>
 
                 <div class="trennikaart">
-                    <div class="päev">Tuesday</div>
+                    <div class="päev" data-i18n="box-tue">Teisipäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train" >Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 16:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">Junior</div>
-                        <div class="trenn">Barbell Strength</div>
+                         <div class="grupp" data-i18n="box-jun">Noored</div>
+                        <div class="trenn" data-i18n="gym-barb">Kangitrenn</div>
                         <div class="aeg">16:30 - 18:00</div>
                        
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Intermediate</div>
-                        <div class="trenn">Strongman</div>
+                        <div class="grupp" data-i18n="box-int">Edasijõudnud</div>
+                        <div class="trenn" >Strongman</div>
                         <div class="aeg">18:00 - 19:30</div>
                         
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Women</div>
-                        <div class="trenn">Barbell Strength</div>
+                        <div class="grupp" data-i18n="box-women">Naised</div>
+                        <div class="trenn" data-i18n="gym-barb">Kangitrenn</div>
                         <div class="aeg">19:30 - 20.30</div>
                         
                     </div>
                 </div>
 
                  <div class="trennikaart">
-                    <div class="päev">Wednesday</div>
+                    <div class="päev" data-i18n="box-wed">Kolmapäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 16:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">Junior</div>
-                        <div class="trenn">Combat Conditioning</div>
+                         <div class="grupp" data-i18n="box-jun">Noored</div>
+                        <div class="trenn" data-i18n="gym-cont">Võitlusspordi üldfüüsis</div>
                         <div class="aeg">16:30 - 18:00</div>
                        
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">all levels</div>
-                        <div class="trenn">Open Lifting</div>
+                        <div class="grupp" data-i18n="box-all">Kõik grupid</div>
+                        <div class="trenn" data-i18n="gym-lift">Vaba jõutreening</div>
                         <div class="aeg">18:00 - 19:30</div>
                         
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Men</div>
-                        <div class="trenn">Barbell Strength</div>
+                        <div class="grupp" data-i18n="gym-men">Mehed</div>
+                        <div class="trenn" data-i18n="gym-barb">Kangitrenn</div>
                         <div class="aeg">19:30 - 20.30</div>
                         
                     </div>
@@ -375,79 +379,79 @@
 
 
                  <div class="trennikaart">
-                    <div class="päev">Tuesday</div>
+                    <div class="päev" data-i18n="box-thur">Neljapäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 16:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">Junior</div>
-                        <div class="trenn">Barbell Strength</div>
+                         <div class="grupp" data-i18n="box-jun">Noored</div>
+                        <div class="trenn" data-i18n="gym-barb">Kangitrenn</div>
                         <div class="aeg">16:30 - 18:00</div>
                        
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Intermediate</div>
+                        <div class="grupp" data-i18n="box-int">Edasijõudnud</div>
                         <div class="trenn">Strongman</div>
                         <div class="aeg">18:00 - 19:30</div>
                         
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Women</div>
-                        <div class="trenn">Barbell Strength</div>
+                        <div class="grupp" data-i18n="box-women">Naised</div>
+                        <div class="trenn" data-i18n="gym-barb">Kangitrenn</div>
                         <div class="aeg">19:30 - 20.30</div>
                         
                     </div>
                 </div>
 
                 <div class="trennikaart">
-                    <div class="päev">Friday</div>
+                    <div class="päev" data-i18n="box-fri">Reede</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 16:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">Junior</div>
-                        <div class="trenn">Combat Conditioning</div>
+                         <div class="grupp" data-i18n="box-jun">Noored</div>
+                        <div class="trenn" data-i18n="gym-cont">Võitlusspordi üldfüüsis</div>
                         <div class="aeg">16:30 - 18:00</div>
                        
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">all levels</div>
-                        <div class="trenn">Open Lifting</div>
+                        <div class="grupp" data-i18n="box-all">Kõik grupid</div>
+                        <div class="trenn" data-i18n="gym-lift">Vaba jõutreening</div>
                         <div class="aeg">18:00 - 19:30</div>
                         
                     </div>
                     <div class="kaardi-info">
-                        <div class="grupp">Men</div>
-                        <div class="trenn">Barbell Strength</div>
+                        <div class="grupp" data-i18n="gym-men">Mehed</div>
+                        <div class="trenn" data-i18n="gym-barb">Kangitrenn</div>
                         <div class="aeg">19:30 - 20.30</div>
                         
                     </div>
                 </div>
 
                 <div class="trennikaart">
-                    <div class="päev">Saturday</div>
+                    <div class="päev" data-i18n="box-sat">Laupäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 22:00</div>
                     </div>
                 </div>
 
 
                 <div class="trennikaart">
-                    <div class="päev">Sunday</div>
+                    <div class="päev" data-i18n="box-sun">Pühapäev</div>
                     <div class="kaardi-info">
-                         <div class="grupp">Independent training</div>
-                        <div class="trenn">Boxing/Gym</div>
+                         <div class="grupp" data-i18n="box-train">Vabatreening</div>
+                        <div class="trenn" data-i18n="box-title">Poks / Jõusaal</div>
                         <div class="aeg">8:00 - 17:00</div>
                     </div>
                     <div class="kaardi-info">
-                         <div class="grupp">All levels</div>
-                        <div class="trenn">Circuit training (fitness)</div>
+                         <div class="grupp" data-i18n="box-all">Kõik grupid</div>
+                        <div class="trenn" data-i18n="gym-circ">Ringtreening (fitness)</div>
                         <div class="aeg">18:30 - 20:00</div>
                        
                     </div>
@@ -460,44 +464,19 @@
 
     <section class="cta" id="cta">
         <div class="cta-txt">
-            <h2>First <span>week</span> is <span>on us</span></h2>
-            <p>No contracts. No commitment. Free training. See why 500+ members choose us over home workouts.</p>
-            <a href="trial.html" target="_blank" class="cta-btn">Start your free training week</a>
-            <div class="cta-btn-note">No credit card • Cancel anytime • All levels are welcome</div>
+            <h2> <span class="none" data-i18n="cta-first">Esimene</span> <span class="span" data-i18n="cta-week">Nädal</span> <span class="none" data-i18n="cta-is">On</span> <span class="span" data-i18n="cta-onus">Tasuta</span></h2>
+            <p data-i18n="cta-p">Ei mingeid lepinguid ega kohustusi. Tule proovima ja näed ise tulemust. 500+ liiget on juba alustanud.</p>
+            <a href="trial.html" target="_blank" class="cta-btn"  data-i18n="cta-start">Alusta tasuta treeningnädalat</a>
+            <div class="cta-btn-note" data-i18n="cta-cancel">Ei vaja krediitkaarti • Tühista igal ajal • Sobib kõigile tasemetele</div>
         </div>  
     </section>
 
     <footer class="footer" id="hero">
-        <div class="foot">
+        <div class="foot" data-i18n="foot-footer">
       © 2026 Vormx • Eesti, Tallinn, Tamme 44 , 52045 • (372) 123-4567
       </div>
     </footer>
 
-   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav-links");
-
-  burger.addEventListener("click", (e) => {
-    e.stopPropagation();
-    nav.classList.toggle("active");
-  });
-
-  nav.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
-
-  document.addEventListener("click", () => {
-    nav.classList.remove("active");
-  });
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 768) {
-      nav.classList.remove("active");
-    }
-  });
-});
-</script>
-
+    <script src="index.js"></script>
   </body>
 </html>
