@@ -205,8 +205,6 @@ function setLanguage(lang) {
     const key = el.getAttribute("data-i18n-placeholder");
     el.placeholder = translations[lang][key];
   });
-
-  updateCartUI();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -230,5 +228,20 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.innerWidth > 768) {
       nav.classList.remove("active");
     }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".ankeet");
+  const successMessage = document.querySelector(".success-message");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    successMessage.style.display = "block";
+
+    setTimeout(() => {
+      successMessage.style.display = "none";
+    }, 3000);
   });
 });
